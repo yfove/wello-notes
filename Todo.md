@@ -1,6 +1,6 @@
 ### Components i need to add
 
-- input component
+- input component (consist of both new card and new list)
 - list component
   - card components
 

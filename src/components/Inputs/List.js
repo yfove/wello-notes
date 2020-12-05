@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import styled from "styled-components";
 
 export default () => {
   // setstate
@@ -48,3 +49,6 @@ export default () => {
 };
 
 // styling
+const Input = styled.div`
+  display: flex;
+`;
