@@ -1,9 +1,23 @@
-function App() {
+import { createGlobalStyle } from "styled-components";
+
+import Header from "./components/Layout/Header";
+import Container from "./components/Layout/Container";
+
+export default () => {
   return (
-    <div className="App">
-      <h1>notes</h1>
+    <div>
+      <GlobalStyle />
+      <Header />
+      <Container>{/* <Lists /> */}</Container>
     </div>
   );
-}
+};
 
-export default App;
+const GlobalStyle = createGlobalStyle`
+  body {
+    color: #fff;
+    background: green;
+    font-size: 16px;
+    font-family: 'Livvic';
+  }
+`;
