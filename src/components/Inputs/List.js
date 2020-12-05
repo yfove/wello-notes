@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-export default () => {
+export default (props) => {
   // setstate
   const [add, setAdd] = useState(false);
   const [title, setTitle] = useState("");

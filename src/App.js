@@ -2,13 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 import Header from "./components/Layout/Header";
 import Container from "./components/Layout/Container";
+import Lists from "./components/Lists";
 
 export default () => {
   return (
     <div>
       <GlobalStyle />
       <Header />
-      <Container>{/* <Lists /> */}</Container>
+      <Container>
+        <Lists />
+      </Container>
     </div>
   );
 };

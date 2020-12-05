@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // Import from inputs
@@ -17,14 +17,17 @@ export default () => {
   //   CRUD Funtions
   const updateList = (data) => {
     setLists(data);
-    saveList(data);
   };
 
   return (
     <List>
       <ListInput updateList={updateList} />
+      <div className="categories"></div>
     </List>
   );
 };
 
 //styling
+const List = styled.div`
+  background: blue;
+`;
