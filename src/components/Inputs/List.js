@@ -1,9 +1,11 @@
 import React from "react";
 
 export default () => {
+  // setstate
   const [add, setAdd] = useState(false);
   const [title, setTitle] = useState("");
 
+  // input list functions
   function submitList() {
     if (title.length < 3)
       return alert("The title must contain at least 3 characters.");
@@ -44,3 +46,5 @@ export default () => {
     </Input>
   );
 };
+
+// styling
