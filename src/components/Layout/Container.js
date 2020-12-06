@@ -7,7 +7,7 @@ export default (props) => {
 
 const Container = styled.div`
   max-width: 1200px;
-  background: rgb(9, 136, 68);
+  // background: rgb(9, 136, 68);
   padding: 0px 10px;
   padding-bottom: 30px;
   margin: 0 auto;

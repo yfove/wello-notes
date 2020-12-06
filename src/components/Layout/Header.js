@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default () => {
   return (
     <Header>
-      <div className="text-logo">NoteWell</div>
+      <div className="text-logo">NoteWell.</div>
     </Header>
   );
 };
@@ -14,9 +14,9 @@ const Header = styled.div`
   align-items: center;
   justify-content: center;
   padding: 15px 0px;
-  background: rgb(15, 155, 80);
+  // background: rgb(15, 155, 80);
   .text-logo {
-    font-size: 30px;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 2px;
   }
