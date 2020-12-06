@@ -23,7 +23,7 @@ export default () => {
   //   need to add delete funciton
 
   const saveList = (data) =>
-    localStorage.setItems("lists", JSON.stringify(data));
+    localStorage.setItem("lists", JSON.stringify(data));
 
   return (
     <List>
@@ -31,7 +31,7 @@ export default () => {
       <div className="categories">
         {lists.map((category, index) => {
           return (
-            <div className="category">
+            <div key={index} className="category">
               <div className="title">
                 {/* for our delete Function */}
                 <i className="fa fa-trash-o icon"></i>
