@@ -21,6 +21,11 @@ export default () => {
   };
 
   //   need to add delete funciton
+  const deleteList = (index) => {
+    let newList = lists.filter((item, ix) => ix !== index);
+    setLists(newList);
+    saveList(newList);
+  };
 
   const saveList = (data) =>
     localStorage.setItem("lists", JSON.stringify(data));
@@ -34,7 +39,12 @@ export default () => {
             <div key={index} className="category">
               <div className="title">
                 {/* for our delete Function */}
-                <i className="fa fa-trash-o icon"></i>
+                <i
+                  onClick={() => {
+                    deleteList(index);
+                  }}
+                  className="fa fa-trash-o icon"
+                ></i>
                 <div className="text">{category.title}</div>
               </div>
               <CardInput category={index} updateList={updateList} />
