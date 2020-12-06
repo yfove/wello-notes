@@ -20,7 +20,7 @@ export default () => {
 const GlobalStyle = createGlobalStyle`
   body {
     color: #fff;
-    background: green;
+    background: rgb(9, 136, 68, .8);
     font-size: 16px;
     font-family: 'Livvic';
   }

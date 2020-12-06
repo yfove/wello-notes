@@ -21,7 +21,7 @@ export default (props) => {
         <React.Fragment>
           <textarea
             className="input"
-            placeholder="Card message"
+            placeholder="Add your Notes Here"
             rows="3"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -48,4 +48,39 @@ export default (props) => {
 
 const AddCard = styled.div`
   display: flex;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  background: rgba(19, 19, 19, 0.08);
+  .input {
+    display: flex;
+    padding: 50px 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 3px;
+    min-width: 85%;
+    background: rgb(202, 255, 227);
+  }
+  .button {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 2px;
+    border: none;
+    outline: none;
+    background: rgba(19, 19, 19, 0.2);
+    color: #fff;
+    cursor: pointer;
+  }
+  .buttons {
+    margin-top: 5px;
+    display: flex;
+    .button {
+      width: 100%;
+    }
+  }
 `;

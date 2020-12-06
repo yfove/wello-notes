@@ -51,4 +51,42 @@ export default (props) => {
 // styling
 const Input = styled.div`
   display: flex;
+  justify-content: flex-start;
+  border-bottom: solid 1px rgba(78, 78, 78, 0.13);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
+  .input {
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    outline: none;
+    color: #222;
+  }
+  .button {
+    border: none;
+    outline: none;
+    background: rgba(34, 34, 34, 0.18);
+    transition: ease all 0.4s;
+    padding: 15px;
+    border-radius: 0px;
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      background: rgba(34, 34, 34, 0.25);
+    }
+  }
+  .add-more {
+    background: rgba(34, 34, 34, 0.18);
+    transition: ease all 0.4s;
+    padding: 15px;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+      background: rgba(34, 34, 34, 0.25);
+    }
+  }
 `;
