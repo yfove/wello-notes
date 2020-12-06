@@ -37,6 +37,7 @@ export default () => {
                 <i className="fa fa-trash-o icon"></i>
                 <div className="text">{category.title}</div>
               </div>
+              <CardInput category={index} updateList={updateList} />
             </div>
           );
         })}
