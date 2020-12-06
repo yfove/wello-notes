@@ -13,7 +13,7 @@ export default () => {
   useEffect(() => {
     let json = localStorage.getItem("lists");
     setLists(json === null ? [] : JSON.parse(json));
-    if (json === null) localStorage.setItems("lists", JSON.stringify([]));
+    if (json === null) localStorage.setItem("lists", JSON.stringify([]));
   }, []);
 
   //   CRUD Funtions
