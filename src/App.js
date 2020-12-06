@@ -1,3 +1,4 @@
+import React from "react";
 import { createGlobalStyle } from "styled-components";
 
 import Header from "./components/Layout/Header";
@@ -6,13 +7,13 @@ import Lists from "./components/Lists";
 
 export default () => {
   return (
-    <div>
+    <React.Fragment>
       <GlobalStyle />
       <Header />
       <Container>
         <Lists />
       </Container>
-    </div>
+    </React.Fragment>
   );
 };
 
