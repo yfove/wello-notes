@@ -51,5 +51,43 @@ export default () => {
 
 //styling
 const List = styled.div`
-  background: blue;
+  background: pale-blue;
+  margin-top: 5px;
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .category {
+      flex-basis: 24%;
+      background: rgba(19, 19, 19, 0.2);
+      min-height: 80px;
+      box-sizing: content-box;
+      margin: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      @media (max-width: 1000px) {
+        flex-basis: 100%;
+        min-height: 120px;
+      }
+      .title {
+        position: relative;
+        font-weight: bold;
+        font-size: 18px;
+        background: rgba(19, 19, 19, 0.3);
+        padding: 10px 5px;
+        display: flex;
+        padding-right: 25px;
+        word-break: break-all;
+        .icon {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          color: #fff;
+        }
+        .text {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
 `;
